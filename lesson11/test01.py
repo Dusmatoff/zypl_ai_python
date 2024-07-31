@@ -1,0 +1,21 @@
+nums = list(range(1, 21))
+print("Original list of integers:")
+print(nums)
+
+print("\nEven numbers from list:")
+y = filter(lambda x: x % 2 == 0, nums)
+print(type(y))
+even_nums = list(y)
+print(even_nums)
+
+print("\nOdd numbers from list:")
+y = filter(lambda x: x % 2 != 0, nums)
+print(type(y))
+odd_nums = list(y)
+print(odd_nums)
+
+print("\nSquare numbers from list:")
+y = map(lambda x: x ** 2, nums)
+print(type(y))
+square_nums = list(y)
+print(square_nums)
